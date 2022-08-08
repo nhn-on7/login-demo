@@ -1,0 +1,26 @@
+spring:
+  config:
+    activate:
+      on-profile: rdb
+
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:mem:~/h2/test/testdb;MODE=MYSQL
+    driver-class-name: org.h2.Driver
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: redis
+
+  redis:
+    port: 6379
+    host: 133.186.211.156
+    password: "*N2vya7H@muDTwdNMR!"
+    database: 33
