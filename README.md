@@ -7,7 +7,7 @@
 ## Redis 를 이용한 로그인 세션
 
 ```bash
-mvn spring-boot:run -Dspring-boot.run.profile=redis
+mvn spring-boot:run -Dspring-boot.run.profiles=redis
 ```
 
 ```bash
@@ -16,7 +16,7 @@ redis-cli -h 133.186.211.156 -p 6379 -n 33 -a ${password}
 
 ## RDB (MySQL) 을 이용한 로그인 세션
 ```bash
-mvn spring-boot:run -Dspring-boot.run.profile=redis
+mvn spring-boot:run -Dspring-boot.run.profiles=rdb
 ```
 ```bash
 mysql -h 133.186.211.156 -u nhn_academy_30 -p
